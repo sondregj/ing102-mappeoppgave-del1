@@ -1,3 +1,7 @@
 .top{
     background-image: url("/img/bergen1.jpg");
+    background-position-y: -50px;
+    margin: 16px 0;
+    margin-top: 0;
+    padding: 32px 0px;
 }
