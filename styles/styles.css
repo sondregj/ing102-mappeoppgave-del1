@@ -47,3 +47,28 @@ div.bio {
     margin: auto;
     text-align: justify;
 }
+
+div.quick-facts {
+    padding: 32px 0px;
+    width: 600px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+}
+
+div.quick-facts table {
+    margin: 0px 100px;
+    width: 400px;
+}
+
+div.quick-facts table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+footer {
+    margin: 32px 0;
+    text-align: center;
+    color: gray;
+    font-size: 0.8em;
+}
