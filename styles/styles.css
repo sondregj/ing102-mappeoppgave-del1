@@ -5,6 +5,29 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: black;
+    height: 64px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+header .back {
+    width: 128px;
+    height: 64px;
+    background-color: gray;
+    text-align: center;
+    padding: 16px 0;
+}
+
+header .back a {
+    color: white;
+    text-decoration: none;
+
+}
+
 h1 {
     text-align: center;
 }
@@ -67,6 +90,16 @@ div.quick-facts table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+div.spotify {
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+
+div.spotify iframe {
+    display: block;
+    margin: auto;
+}
 
 footer {
     margin: 32px 0;
