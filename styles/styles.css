@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    font-family: Futura, Helvetica, Arial;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img.member-large {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 256px;
+    height: 256px;
+}
+
+.social-links ul {
+    list-style-type: none;
+    display: block;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.social-links ul li {
+    float: none;
+    display: inline;
+}
+
+.social-links ul li img {
+    display: inline-block;
+    width: 32px;
+    padding: 8px;
+}
+
+div.bio {
+    padding: 32px 0px;
+    width: 600px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+}
