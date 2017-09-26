@@ -19,7 +19,7 @@ header .back {
     height: 64px;
     background-color: gray;
     text-align: center;
-    padding: 16px 0;
+    padding: 0;
 }
 
 header .back a {
