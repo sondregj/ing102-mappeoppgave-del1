@@ -5,6 +5,29 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: black;
+    height: 64px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+header .back {
+    width: 128px;
+    height: 64px;
+    background-color: gray;
+    text-align: center;
+    padding: 0;
+}
+
+header .back a {
+    color: white;
+    text-decoration: none;
+
+}
+
 h1 {
     text-align: center;
 }
@@ -42,6 +65,33 @@ img.member-large {
     padding: 8px;
 }
 
+img.member-medium {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    width: 192px;
+    height: 192px;
+}
+
+.members-ul ul {
+    list-style-type: none;
+    display: block;
+    margin:64px 0;
+    padding:0;
+    text-align:center;
+}
+
+.members-ul ul li {
+    float: none;
+    display: inline;
+}
+
+.members-ul ul li img {
+    display: inline-block;
+    width: 192px;
+    padding: 24px;
+}
+
 div.bio {
     padding: 32px 0px;
     width: 600px;
@@ -67,6 +117,16 @@ div.quick-facts table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+div.spotify {
+    display: block;
+    margin: auto;
+    width: 600px;
+}
+
+div.spotify iframe {
+    display: block;
+    margin: auto;
+}
 
 footer {
     margin: 32px 0;
