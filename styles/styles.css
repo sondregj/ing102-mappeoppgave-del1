@@ -20,6 +20,7 @@ header .back {
     background-color: gray;
     text-align: center;
     padding: 0;
+    padding-top: 20px;
 }
 
 header .back a {
