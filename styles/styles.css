@@ -46,6 +46,10 @@ img.member-large {
     border-radius: 50%;
     width: 256px;
     height: 256px;
+    
+}
+img.member-large:hover {
+    filter: blur(10px);
 }
 
 .social-links ul {
