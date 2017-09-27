@@ -11,5 +11,8 @@ background-color: #47696D;
 tr:hover {background-color: #white}
 
 laaa.grow img:hover {
-  -webkit-transform: scale(4.33);
-  -webkit-transform-origin: 50% 50%;
+
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+
+  }

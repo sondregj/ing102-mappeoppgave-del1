@@ -17,7 +17,7 @@ nav {
 nav .back {
     width: 128px;
     height: 64px;
-    background-color: gray;
+    background-color: #47696D;
     text-align: center;
     padding-top: 16px;
 }
@@ -46,7 +46,7 @@ img.member-large {
     border-radius: 50%;
     width: 256px;
     height: 256px;
-    
+
 }
 img.member-large:hover {
     filter: blur(10px);
