@@ -5,3 +5,20 @@
     margin-top: 0;
     padding: 32px 0px;
 }
+
+.f:hover {
+    content: url("/img/facebook-logo-color.png");
+}
+
+.s:hover {
+    content: url("/img/snapchat-logo-color.png");
+}
+.g:hover {
+    content: url("/img/github-logo-color.png");
+}
+.i:hover {
+    content: url("/img/instagram-logo-color.png");
+}
+.t:hover {
+    content: url("/img/twitter-logo-color.png");
+}
