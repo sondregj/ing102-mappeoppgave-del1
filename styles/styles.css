@@ -68,20 +68,20 @@ img.member-large {
 }
 
 .f:hover {
-    content: url("/img/facebook-logo-color.png");
+    content: url("/img/logos/facebook-logo-color.png");
 }
 
 .s:hover {
-    content: url("/img/snapchat-logo-color.png");
+    content: url("/img/logos/snapchat-logo-color.png");
 }
 .g:hover {
-    content: url("/img/github-logo-color.png");
+    content: url("/img/logos/github-logo-color.png");
 }
 .i:hover {
-    content: url("/img/instagram-logo-color.png");
+    content: url("/img/logos/instagram-logo-color.png");
 }
 .t:hover {
-    content: url("/img/twitter-logo-color.png");
+    content: url("/img/logos/twitter-logo-color.png");
 }
 
 img.member-medium {
