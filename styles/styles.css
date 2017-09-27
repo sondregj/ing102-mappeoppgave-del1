@@ -35,6 +35,7 @@ h1 {
 
 h2 {
     text-align: center;
+    margin-top: 64px;
 }
 
 
@@ -131,7 +132,7 @@ div.spotify iframe {
 }
 
 footer {
-    margin: 64px 0;
+    margin: 32px 0;
     text-align: center;
     color: gray;
     font-size: 0.8em;
