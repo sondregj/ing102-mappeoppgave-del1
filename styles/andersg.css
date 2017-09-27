@@ -5,19 +5,3 @@ div.topbilde {
     margin-top: 0;
     padding: 32px 0;
 }
-
-
-tr,th{
-  padding: 10px;
-}
-
-table{
-    width: 70%;
-    border-collapse: collapse;
-}
-
-tr{
-  height: 50px;
-  text-align: center;
-}
-tr:hover{background-color: #87CEFA;}

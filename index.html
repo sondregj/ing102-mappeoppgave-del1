@@ -1,39 +1,80 @@
 <html>
 
 <head>
-    <title>Hei</title>
+    <title>Webprosjekt</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <script src="libs/p5.js"></script>
+    <script src="libs/p5.dom.js"></script>
+    <script src="libs/p5.sound.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/anim.js"></script>
+
 </head>
 
 <body>
-    <nav>
 
-    </nav>
+    <header>
+        <div id="canvas-home">
+            <h1>Webprosjekt</h1>
+            <h3>ING102 | Prosjekt i webutvikling</h3>
+        </div>
+    </header>
 
-    <div class="members-ul">
+    <div class="content">
+        <h2>Prosjekt</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et tortor arcu. Maecenas tincidunt nec tortor quis posuere.
+            Aliquam erat volutpat. Ut varius id lorem ac aliquet. Maecenas sit amet turpis non purus varius tempus. Fusce
+            molestie posuere neque posuere laoreet. Nullam sit amet rhoncus dui. Proin tincidunt justo at nisl venenatis
+            scelerisque. Vivamus nec erat iaculis, dictum turpis nec, semper nulla. Nam a nulla orci. Maecenas sed nulla
+            auctor, hendrerit magna sed, sollicitudin risus. Nullam erat ex, feugiat vel metus vitae, molestie consequat
+            enim.
+        </p>
+
         <h2>Gruppemedlemmer</h2>
-        <ul>
-            <li><a href="andersg.html">
-                <img class="member-medium" src="img/Anders G.jpg" alt="Anders Graneng">
-            </a></li>
-            <li><a href="andersm.html">
-                <img class="member-medium" src="img/AndersM.jpg" alt="Anders Mæhlum">
-            </a></li>
-            <li><a href="jostein.html">
-                <img class="member-medium" src="img/Jostein.jpg" alt="Jostein Digernes">
-            </a></li>
-            <li><a href="sondre.html">
-                <img class="member-medium" src="img/Sondre.jpg" alt="Sondre Gjellestad">
-                
-            </a>Sondre Gjellestad</li>
-        </ul>
+        <div class="members-ul">
+
+            <ul>
+                <li><a href="andersg.html">
+                    <div><img class="member-medium" src="img/Anders G.jpg" alt="Anders Graneng">
+                    <h4>Anders Graneng</h4>
+                    </div>
+                </a></li>
+                <li>
+                    <a href="andersm.html">
+                        <div>
+                            <img class="member-medium" src="img/AndersM.jpg" alt="Anders Mæhlum">
+                            <h4>Anders Mæhlum</h4>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="jostein.html">
+                        <div>
+                            <img class="member-medium" src="img/Jostein.jpg" alt="Jostein Digernes">
+                            <h4>Jostein Digernes</h4>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="sondre.html">
+                        <div>
+                            <img class="member-medium" src="img/Sondre.jpg" alt="Sondre Gjellestad">
+                            <h4>Sondre Gjellestad</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    
-<footer>
-    Hei
-</footer>
+    <footer>
+        © Gruppe 9 | 2017
+    </footer>
 </body>
 
 </html>

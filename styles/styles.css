@@ -5,7 +5,7 @@ body {
     margin: 0;
 }
 
-header {
+nav {
     background-color: black;
     height: 64px;
     width: 100%;
@@ -14,20 +14,20 @@ header {
 
 }
 
-header .back {
+nav .back {
     width: 128px;
     height: 64px;
     background-color: gray;
     text-align: center;
-    padding: 0;
-    padding-top: 20px;
+    padding-top: 16px;
 }
 
-header .back a {
+nav .back a {
     color: white;
     text-decoration: none;
-
 }
+
+
 
 h1 {
     text-align: center;
@@ -85,15 +85,19 @@ img.member-medium {
 .members-ul ul li {
     float: none;
     display: inline;
+    margin: 0;
+    padding: 0;
 }
 
-.members-ul ul li img {
+.members-ul ul li a {
     display: inline-block;
     width: 192px;
     padding: 24px;
+    text-decoration: none;
+    color: black;
 }
 
-div.bio {
+div.content {
     padding: 32px 0px;
     width: 600px;
     display: block;
@@ -101,13 +105,14 @@ div.bio {
     text-align: justify;
 }
 
-div.quick-facts {
-    padding: 32px 0px;
-    width: 600px;
-    display: block;
-    margin: auto;
-    text-align: justify;
+div.content h2 {
+    margin: 32px 0;
 }
+
+div.content p {
+    margin: 32px 0;
+}
+
 
 div.quick-facts table {
     margin: 0px 100px;
@@ -118,11 +123,7 @@ div.quick-facts table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-div.spotify {
-    display: block;
-    margin: auto;
-    width: 600px;
-}
+
 
 div.spotify iframe {
     display: block;
@@ -130,7 +131,7 @@ div.spotify iframe {
 }
 
 footer {
-    margin: 32px 0;
+    margin: 64px 0;
     text-align: center;
     color: gray;
     font-size: 0.8em;
