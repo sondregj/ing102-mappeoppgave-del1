@@ -9,7 +9,6 @@ background-color: #47696D;
 
 }
 tr:hover {background-color: #white}
-img:hover {background-color:lightgray}
 
 laaa.grow img:hover {
   -webkit-transform: scale(4.33);
