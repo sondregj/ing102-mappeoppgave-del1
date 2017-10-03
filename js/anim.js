@@ -71,7 +71,7 @@ function Particle(x, y) {
 
     this.render = function () {
         for (var i = 0; i < particles.length; i++) {
-            if (dist(this.pos.x, this.pos.y, particles[i].pos.x, particles[i].pos.y) < 80) {
+            if (dist(this.pos.x, this.pos.y, particles[i].pos.x, particles[i].pos.y) < 150) {
                 strokeWeight(1);
                 line(this.pos.x, this.pos.y, particles[i].pos.x, particles[i].pos.y);
             }
@@ -100,7 +100,7 @@ function draw() {
     }
 
     // Oppdaterer og tegner partikler
-    stroke(200,33,55);
+    stroke(200, 33, 55);
     for (var i = 0; i < particles.length; i++) {
         particles[i].update();
         particles[i].edges();

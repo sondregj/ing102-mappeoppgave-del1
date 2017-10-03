@@ -1,6 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Webprosjekt</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -17,24 +23,34 @@
         <div id="canvas-home">
             <h1>Webprosjekt</h1>
             <h3>ING102 | Prosjekt i webutvikling</h3>
+            <img class="arrow-down" src="img/arrow-down.png" onclick="scrollDown()">
         </div>
     </header>
 
-    <div class="content">
+    <div id="top" class="content">
+        <p>
+            Dette er en nettside med en kort beskrivelse av et gruppeprosjekt i faget ING102 ved Høgskulen i Bergen, Campus Kronstad.
+            I tillegg er det sider med en introduksjon til hver av gruppemedlemmene i prosjektet.
+        </p>
         <h2>Prosjekt</h2>
         <p>
-            Klikk på et bilde eller navn til et gruppemedlem for mer informasjon om dem.
+            Prosjektet går ut på å skape en nettside.
         </p>
 
         <h2>Gruppemedlemmer</h2>
+        <p>
+            Klikk på et bilde eller navn til et gruppemedlem for mer informasjon om dem.
+        </p>
         <div class="members-ul">
 
             <ul>
-                <li><a href="andersg.html">
-                    <div><img class="member-medium" src="img/AndersG.jpg" alt="Anders Graneng">
-                    <h4>Anders Graneng</h4>
-                    </div>
-                </a></li>
+                <li>
+                    <a href="andersg.html">
+                        <div><img class="member-medium" src="img/AndersG.jpg" alt="Anders Graneng">
+                            <h4>Anders Graneng</h4>
+                        </div>
+                    </a>
+                </li>
                 <li>
                     <a href="andersm.html">
                         <div>
