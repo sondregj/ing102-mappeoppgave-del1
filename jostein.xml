@@ -1,0 +1,14 @@
+<utdanning>
+    <skole>
+        <navn>Holen Skole</navn>
+        <yr>2011-2014</yr>
+    </skole>
+    <skole>
+        <navn>Amalie Skram VGS</navn>
+        <yr>2014-2017</yr>
+    </skole>
+    <skole>
+        <navn>Dataingeniør HVL</navn>
+        <yr>2017-</yr>
+    </skole>
+</utdanning>
