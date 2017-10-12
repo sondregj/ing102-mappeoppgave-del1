@@ -5,9 +5,7 @@ body {
     margin: 0;
 }
 
-body.andersm {
-    background-color: #47696D;
-}
+
 
 #canvas-home canvas {
     position: absolute;
@@ -113,6 +111,7 @@ div.andersg-top {
 
 div.andersm-top {
     background-image: url("/img/Abak.jpg");
+    filter: brightness(2);
 }
 
 
