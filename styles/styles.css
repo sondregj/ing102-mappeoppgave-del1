@@ -5,13 +5,65 @@ body {
     margin: 0;
 }
 
+body.andersm {
+    background-color: #47696D;
+}
+
+#canvas-home canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#canvas-home h1 {
+    position: absolute;
+    z-index: 3;
+    font-size: 5em;
+    text-align: center;
+    top: 50vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#canvas-home h3 {
+    position: absolute;
+    z-index: 2;
+    font-size: 1.5em;
+    text-align: center;
+    top: 70vh;
+    width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#canvas-home .arrow-down {
+    display: block;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+    top: 85vh;
+    width: 32px;
+    height: 32px;
+}
+
 nav {
     background-color: black;
     height: 64px;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 nav .back {
@@ -27,8 +79,6 @@ nav .back a {
     text-decoration: none;
 }
 
-
-
 h1 {
     text-align: center;
 }
@@ -38,19 +88,34 @@ h2 {
     margin-top: 64px;
 }
 
-.jostein-top{
-    background-image: url("/img/bergen1.jpg"), url("https://i.imgur.com/E86ak52.jpg");
-    background-position-y: -150px;
-    margin: 16px 0;
-    margin-top: 0;
-    padding: 32px 0px;
-}
-
-.sondre-top {
-    background-image: url("https://i.imgur.com/E86ak52.jpg");
+div.header {
     margin: 0 0 16px 0;
     padding: 32px 0px;
 }
+
+div.header-home {
+    height: 100vh;
+    color: white;
+}
+
+div.jostein-top {
+    background-image: url("/img/bergen1.jpg"), url("https://i.imgur.com/E86ak52.jpg");
+    background-position-y: -150px;
+}
+
+div.sondre-top {
+    background-image: url("https://i.imgur.com/E86ak52.jpg");
+}
+
+div.andersg-top {
+    background-image: url("/img/trondheim.jpg");
+}
+
+div.andersm-top {
+    background-image: url("/img/Abak.jpg");
+}
+
+
 
 img.member-large {
     display: block;
@@ -58,8 +123,8 @@ img.member-large {
     border-radius: 50%;
     width: 256px;
     height: 256px;
-
 }
+
 img.member-large:hover {
     filter: blur(10px);
 }
@@ -67,9 +132,9 @@ img.member-large:hover {
 .social-links ul {
     list-style-type: none;
     display: block;
-    margin:0;
-    padding:0;
-    text-align:center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .social-links ul li {
@@ -90,12 +155,15 @@ img.member-large:hover {
 .s:hover {
     content: url("/img/logos/snapchat-logo-color.png");
 }
+
 .g:hover {
     content: url("/img/logos/github-logo-color.png");
 }
+
 .i:hover {
     content: url("/img/logos/instagram-logo-color.png");
 }
+
 .t:hover {
     content: url("/img/logos/twitter-logo-color.png");
 }
@@ -108,12 +176,20 @@ img.member-medium {
     height: 192px;
 }
 
+
+div.members-ul {
+    width: 1000px;
+    position: relative;
+    left: -33%;
+}
+
+
 .members-ul ul {
     list-style-type: none;
     display: block;
-    margin:64px 0;
-    padding:0;
-    text-align:center;
+    margin: 64px 0;
+    padding: 0;
+    text-align: center;
 }
 
 .members-ul ul li {
@@ -144,9 +220,12 @@ div.content h2 {
 }
 
 div.content p {
-    margin: 32px 0;
+    margin: 64px 0;
     line-height: 2em;
 }
+
+
+
 
 
 div.quick-facts table {
@@ -158,14 +237,14 @@ div.quick-facts table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-
+div.quick-facts.andersg tr:hover {
+    background-color: #47696D;
+}
 
 div.spotify iframe {
     display: block;
     margin: auto;
 }
-
-
 
 footer {
     margin: 32px 0;
