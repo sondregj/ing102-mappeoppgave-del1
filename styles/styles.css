@@ -5,8 +5,6 @@ body {
     margin: 0;
 }
 
-
-
 #canvas-home canvas {
     position: absolute;
     top: 0;
@@ -28,7 +26,7 @@ body {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; 
+    user-select: none;
 }
 
 #canvas-home h3 {
@@ -96,7 +94,6 @@ div.header-home {
     color: white;
 }
 
-
 div.jostein-top {
     background-image: url("/img/bergen1.jpg"), url("https://i.imgur.com/E86ak52.jpg");
     background-position-y: -150px;
@@ -114,8 +111,9 @@ div.andersm-top {
     background-image: url("/img/Abak.jpg");
     filter: brightness(2);
 }
-/*Ovenfor er de ulike bakgrunnsbildene på de ulike brukernes profiler.*/
 
+
+/*Ovenfor er de ulike bakgrunnsbildene på de ulike brukernes profiler.*/
 
 img.member-large {
     display: block;
@@ -167,6 +165,8 @@ img.member-large:hover {
 .t:hover {
     content: url("/img/logos/twitter-logo-color.png");
 }
+
+
 /*Endrer fra svarte ikon til ikon med farge når du holder musepeker over.*/
 
 img.member-medium {
@@ -177,13 +177,11 @@ img.member-medium {
     height: 192px;
 }
 
-
 div.members-ul {
     width: 1000px;
     position: relative;
     left: -33%;
 }
-
 
 .members-ul ul {
     list-style-type: none;
@@ -225,9 +223,28 @@ div.content p {
     line-height: 2em;
 }
 
+.link {
+    color: #444;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.link {
+    text-decoration: none;
+    color: #444;
+}
 
+.link:visited {
+    color: #444;
+}
 
+.link:hover {
+    color: rgb(160, 0, 0);
+}
+
+.img-content {
+    width: 600px;
+}
 
 div.quick-facts table {
     margin: 0px 100px;
@@ -236,6 +253,12 @@ div.quick-facts table {
 
 div.quick-facts table tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
 }
 
 div.quick-facts.andersg tr:hover {
