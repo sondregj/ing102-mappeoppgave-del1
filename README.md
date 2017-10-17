@@ -1,1 +1,0 @@
-# ing102-mappeoppgave-del1
