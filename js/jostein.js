@@ -1,6 +1,6 @@
 var tabell = document.getElementById("tabell");
 
-// Get the XML document
+// Henter XML dokumentet
 var Connect = new XMLHttpRequest();
 Connect.open("GET", "jostein.xml", false);
 Connect.send(null)
@@ -8,7 +8,7 @@ Connect.send(null)
 // Place the response in an XML document 
 var docX = Connect.responseXML;
 
-// Get all the member element contents and create a table dynamically
+// Henter de ulike XML elementene og lager en HTML tabell via en for-løkke
 var navn = docX.getElementsByTagName("navn");
 var yr = docX.getElementsByTagName("yr");
 

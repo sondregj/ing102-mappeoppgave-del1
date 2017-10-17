@@ -28,7 +28,7 @@ body {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none; 
 }
 
 #canvas-home h3 {
@@ -96,6 +96,7 @@ div.header-home {
     color: white;
 }
 
+
 div.jostein-top {
     background-image: url("/img/bergen1.jpg"), url("https://i.imgur.com/E86ak52.jpg");
     background-position-y: -150px;
@@ -113,7 +114,7 @@ div.andersm-top {
     background-image: url("/img/Abak.jpg");
     filter: brightness(2);
 }
-
+/*Ovenfor er de ulike bakgrunnsbildene på de ulike brukernes profiler.*/
 
 
 img.member-large {
@@ -166,6 +167,7 @@ img.member-large:hover {
 .t:hover {
     content: url("/img/logos/twitter-logo-color.png");
 }
+/*Endrer fra svarte ikon til ikon med farge når du holder musepeker over.*/
 
 img.member-medium {
     display: block;
