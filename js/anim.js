@@ -35,26 +35,24 @@ function setup() {
     background(255);
 }
 
-// Klassefunksjon for partikkelobjekter
-function Particle(x, y) {
-    this.speed = 0.5;
-    this.pos = createVector(random(0, width), random(0, height));
-    this.vel = createVector(random(-this.speed, this.speed), random(-this.speed, this.speed));
 
-    this.edgeOffset = 25;
+class Particle {
+    constructor(x, y) {
 
-    // Dersom parametrene for funksjonen var definert blir de iverksatt
-    if (x !== undefined && y !== undefined) {
-        this.pos.x = x;
-        this.pos.y = y;
+        this.speed = 0.5;
+        this.pos = createVector(random(0, width), random(0, height));
+        this.vel = createVector(random(-this.speed, this.speed), random(-this.speed, this.speed));
+    
+        this.edgeOffset = 25;
+
+        // Dersom parametrene for funksjonen var definert blir de iverksatt
+        if (x !== undefined && y !== undefined) {
+            this.pos.x = x;
+            this.pos.y = y;
+        }
     }
 
-    this.update = function () {
-        this.pos.add(this.vel);
-    }
-
-    // Funksjon som håndterer partikler når de forlater rammen
-    this.edges = function () {
+    edges() {
         if (this.pos.x < -this.edgeOffset) {
             this.pos.x = width + this.edgeOffset;
         }
@@ -69,7 +67,11 @@ function Particle(x, y) {
         }
     }
 
-    this.render = function () {
+    update() {
+        this.pos.add(this.vel);
+    }
+
+    render() {
         for (var i = 0; i < particles.length; i++) {
             if (dist(this.pos.x, this.pos.y, particles[i].pos.x, particles[i].pos.y) < 150) {
                 strokeWeight(1);
@@ -81,10 +83,13 @@ function Particle(x, y) {
     }
 }
 
-function Dot(i, j) {
-    this.pos = createVector(i, j);
 
-    this.render = function () {
+class Dot {
+    constructor(i, j) {
+        this.pos = createVector(i, j);
+    }
+
+    render() {
         point(32 * this.pos.x + 16, 32 * this.pos.y + 16);
     }
 }
