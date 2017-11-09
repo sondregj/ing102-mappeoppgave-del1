@@ -1,10 +1,11 @@
+/*Bestemmer bakgrunnsfargen på selve siden på bodyen*/
 body {
     background-color: white;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     padding: 0;
     margin: 0;
 }
-
+/**/
 #canvas-home canvas {
     position: absolute;
     top: 0;
@@ -53,7 +54,7 @@ body {
     width: 32px;
     height: 32px;
 }
-
+/**/
 nav {
     background-color: black;
     height: 64px;
@@ -61,7 +62,7 @@ nav {
     margin: 0;
     padding: 0;
 }
-
+/**/
 nav .back {
     width: 128px;
     height: 48px;
@@ -69,46 +70,46 @@ nav .back {
     text-align: center;
     padding-top: 16px;
 }
-
+/**/
 nav .back a {
     color: white;
     text-decoration: none;
 }
-
+/**/
 h1 {
     text-align: center;
     font-size: 3em;
 }
-
+/**/
 h2 {
     font-size: 2em;
     text-align: center;
     margin-top: 64px;
 }
-
+/**/
 div.header {
     margin: 0 0 16px 0;
     padding: 32px 0px;
 }
-
+/**/
 div.header-home {
     height: 100vh;
     color: white;
 }
-
+/**/
 div.jostein-top {
     background-image: url("/img/bergen1.jpg"), url("https://i.imgur.com/E86ak52.jpg");
     background-position-y: -150px;
 }
-
+/**/
 div.sondre-top {
     background-image: url("https://i.imgur.com/E86ak52.jpg");
 }
-
+/**/
 div.andersg-top {
     background-image: url("/img/trondheim.jpg");
 }
-
+/**/
 div.andersm-top {
     background-image: url("/img/Abak.jpg");
     filter: brightness(2);
