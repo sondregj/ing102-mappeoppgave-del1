@@ -275,21 +275,24 @@ div.content p {
 .img-content {
     width: 600px;
 }
+/*Bredden på bilde på prosjektbeskrivelse siden. */
 
 div.quick-facts table {
-    margin: 0px 100px;
-    width: 400px;
+    margin: 0px 100px; /*Denne sentrerer tabellen.*/
+    width: 400px; /*Estetiske grunner, den så smal ut i forhold til resten av siden.*/
 }
 
 div.quick-facts table tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+/*Annenhver av tabellradene er hvit.*/
 
 th,
 td {
     padding: 8px;
     text-align: left;
 }
+/* Vi satt padding til 8px. Estetiske grunner. */
 
 div.quick-facts.andersg tr:hover {
     background-color: #47696D;
