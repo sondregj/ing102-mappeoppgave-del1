@@ -294,11 +294,7 @@ td {
 div.quick-facts.andersg tr:hover {
     background-color: #47696D;
 }
-
-div.spotify iframe {
-    display: block;
-    margin: auto;
-}
+/*Fargen endrer seg når du hovrer over teksten. Dette skjer kun på Anders G sin side.*/
 
 footer {
     margin: 32px 0;
@@ -306,3 +302,4 @@ footer {
     color: gray;
     font-size: 0.8em;
 }
+/* Her gjør vi footer fonten mer nøytral og sentrert.  */
