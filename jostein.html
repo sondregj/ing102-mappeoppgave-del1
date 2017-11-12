@@ -16,7 +16,7 @@
                 <a href="index.html">← Tilbake</a>
             </div>
         </nav>
-        <div class="header jostein-top">
+        <div class="header jostein-top"> <!-- jostein-top er forsidebildet på siden -->
             <header>
                 <h1>
                     Jostein Rådmannsøy Digernes
@@ -27,8 +27,8 @@
                 <div class="social-links">
                     <ul>
                         <li>
-                            <a href="https://github.com/571542" target="_blank">
-                                <img src="img/logos/github-logo.png" class="g">
+                            <a href="https://github.com/571542" target="_blank"><!--Target blank åpner bildet i ny fane.-->
+                                <img src="img/logos/github-logo.png" class="g"><!--Klassen er g for "github". Den endrer bilde når du hovrer over den.-->
                             </a>
                         </li>
                         <li>
@@ -48,12 +48,13 @@
                         </li>
                     </ul>
                 </div>
+            </header>
         </div>
-        </header>
+
         <div class="content">
             <div class="bio">
                 <h2>
-                    Bio
+                    Om meg
                 </h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus augue tortor, rhoncus in augue vel, congue fermentum nisl.
@@ -62,7 +63,7 @@
                     feugiat leo, a ultrices nisi egestas id. Duis ac vestibulum quam. Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit.
                 </p>
-                <div class="quick-facts" id="tabell"></div>
+                <div class="quick-facts" id="tabell"></div><!--Div boksen er tom i html dokumenetet, men den fylles opp via JS filen jostein.js. -->
             </div>
     </div>
     </header>
@@ -80,7 +81,7 @@
             </p>
             <div class="quick-facts" id="tabell"></div> <!--Tabellen er tom, den blir fylt opp av jostein.js -->
         </div>
-        <script src="js/jostein.js"></script>
+        <script src="js/jostein.js"></script><!--Denne javascriptsiden skriver inn en tabell fra et xml dokument.-->
     </body>
 
 </html>

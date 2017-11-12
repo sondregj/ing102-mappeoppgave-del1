@@ -5,7 +5,6 @@ var Connect = new XMLHttpRequest();
 Connect.open("GET", "jostein.xml", false);
 Connect.send(null)
 
-// Place the response in an XML document 
 var docX = Connect.responseXML;
 
 // Henter de ulike XML elementene og lager en HTML tabell via en for-løkke

@@ -6,6 +6,7 @@ body {
     margin: 0;
 }
 
+/*# er for å refere til id istendenfor class. Canvas er css-en for forside "applikasjonen"*/
 #canvas-home canvas {
     position: absolute;
     top: 0;
@@ -73,6 +74,7 @@ nav .back {
     padding-top: 16px;
 }
 
+/*Tekstfarge for tilbake knappen i profil og prosjekt sidene*/
 nav .back a {
     color: white;
     text-decoration: none;
@@ -80,7 +82,7 @@ nav .back a {
 
 h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3em; /*h1 fonten er bla. for navnene våres på profilsidene. Hovedoverskriften. "em" er for å gjøre den tre ganger større enn vanlig*/
 }
 
 h2 {
@@ -93,6 +95,7 @@ div.header {
     margin: 0 0 16px 0;
     padding: 32px 0px;
 }
+
 div.header-home {
     height: 100vh;
     color: white;
@@ -112,21 +115,22 @@ div.andersm-top {
     background-image: url("/img/Abak.jpg");
     filter: brightness(2);
 }
+
 /*Ovenfor er de ulike bakgrunnsbildene på de ulike brukernes profiler.*/
 
-img.member-large {
+img.member-large { /*Denne ordner utseende på profilbildene våres. Den gjør bildene runde, og ornder størrelsen på dem*/
     display: block;
     margin: auto;
     border-radius: 50%;
     width: 256px;
     height: 256px;
 }
-/*blurrer bilde*/
-img.member-large:hover {
+
+img.member-large:hover { /*blurrer bilde, når du hoverer over med musen.*/
     filter: blur(10px);
 }
 
-.social-links ul {
+.social-links ul { /*Dette er listen av sosial media ikonene. Det er bilder istedenfor tekst på listen.*/
     list-style-type: none;
     display: block;
     margin: 0;
@@ -136,7 +140,7 @@ img.member-large:hover {
 
 .social-links ul li {
     float: none;
-    display: inline;
+    display: inline; /*inline gjør at ikonene står ved siden av hverandre, og ikke over hverandre*/
 }
 
 .social-links ul li img {
@@ -171,13 +175,18 @@ img.member-medium {
     margin: auto;
     border-radius: 50%;
     width: 192px;
-    height: 192px;
+    height: 192px; /*Dette er også profilbildene våres, men på forsiden. De er mindre enn de andre.*/
 }
 
 div.members-ul {
     width: 1000px;
     position: relative;
     left: -33%;
+/*Denne ordner at de fire bildene står ved siden av hverandre, og sentrert.
+  Men den skaper et par problemer når vi skal vise nettsiden på mobil. Det blir vanskeligt
+  å trykke på bilde lengst til venstre på en smalere skjerm, men vi fant ingen lur løsning for 
+  at det skulle se fint ut både på pc og mobil, så vi lot det være.
+  Det så veldig bra ut på pc.*/
 }
 
 .members-ul ul {
@@ -185,12 +194,12 @@ div.members-ul {
     display: block;
     margin: 64px 0;
     padding: 0;
-    text-align: center;
+    text-align: center; /*Sentrerer teksten under bildene*/
 }
 
 .members-ul ul li {
     float: none;
-    display: inline;
+    display: inline; /*Bildene står ved siden av hverandre, ikke ovenfor*/
     margin: 0;
     padding: 0;
 }
@@ -198,22 +207,22 @@ div.members-ul {
 .members-ul ul li a {
     display: inline-block;
     width: 192px;
-    padding: 24px;
+    padding: 24px; /* Lager litt større mellomrom mellom bildene. */
     text-decoration: none;
     color: black;
 }
 
-.black-box {
+.black-box { /*Dette er den svarte boksen hvor det står "mer info"*/
     display: block;
     margin: auto;
     padding: 8px 16px;
-    width: max-content;
+    width: max-content; /*Max content fikser bredden til boksen til det som er inni*/
 
     border: 4px solid black;
     box-sizing: border-box;
 
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; /*Fjerner understreken til linken*/
 
     font-size: 1em;
     font-weight: bold;
@@ -221,7 +230,7 @@ div.members-ul {
     color: #FFF;
 }
 
-.black-box:hover {
+.black-box:hover { /*Endrer fargen på bakgrunnen og samtidig teksten når du hovrer over*/
     background-color: #FFF;
     color: #000;
     border: 4px solid black;
@@ -231,12 +240,12 @@ div.members-ul {
     outline: none;
 }
 
-div.content {
+div.content { /*Content er hovedklassen vår for tekst.*/
     padding: 32px 0px;
-    width: 600px;
+    width: 600px; /*Fikser bredden på avsnittene til akkurat 600 piksler.*/
     display: block;
     margin: auto;
-    text-align: justify;
+    text-align: justify; /*Gjør at teksten fylles helt ut, bent langs kantene*/
 }
 
 div.content h2 {
@@ -248,7 +257,8 @@ div.content p {
     line-height: 2em;
 }
 
-.link {
+.link { /*Slik ser en link ut på nettsiden vår, men tror ikke vi hadde noen linker, som ikke 
+          var knapper, i det ferdige produktet.*/
     color: #444;
     text-decoration: none;
     font-weight: bold;
@@ -270,7 +280,7 @@ div.content p {
 .img-content {
     width: 600px;
 }
-/*Bredden på bilde på prosjektbeskrivelse siden. */
+/*Bredden på "Happy New Year"-bildet på prosjektbeskrivelse siden. */
 
 div.quick-facts table {
     margin: 0px 100px; /*Denne sentrerer tabellen.*/
