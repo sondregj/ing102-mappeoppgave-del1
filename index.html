@@ -2,95 +2,119 @@
 <html lang="no">
 
 <head>
-  <!--Tilpasser skjermens størrelse-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Tilpasser skjermens størrelse-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Webprosjekt</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/anim.js"></script>
+	<title>Webprosjekt</title>
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/addons/p5.dom.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/anim.js"></script>
 
 </head>
 
 <body>
 
-    <div class="header-home">
-        <div id="canvas-home"><!--Her kommer det interaktive forside bildet.-->
-            <h1>Webprosjekt</h1>
-            <h3>ING102 | Prosjekt i webutvikling</h3>
-            <img class="arrow-down" src="img/arrow-down.png" onclick="scrollDown()"><!--scrollDown() funksjonen ligger i main.js. Når du trykker på pilen på forsiden
+	<nav>
+		<div class="menuToggle">
+			<input type="checkbox" />
+
+			<span></span>
+			<span></span>
+			<span></span>
+
+			<ul class="menu">
+				<a href=".">
+					<li>Hjem</li>
+				</a>
+				<a href="./prosjekt.html">
+					<li>Prosjekt</li>
+				</a>
+				<a href=".#members">
+					<li>Gruppemedlemmer</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="header-home">
+		<div id="canvas-home">
+			<!--Her kommer det interaktive forside bildet.-->
+			<h1>Webprosjekt</h1>
+			<h3>ING102 | Prosjekt i webutvikling</h3>
+			<img class="arrow-down" src="img/arrow-down.png" onclick="scrollDown()">
+			<!--scrollDown() funksjonen ligger i main.js. Når du trykker på pilen på forsiden
                                                                                         blir du tatt ned til beskrivlesen og gruppemedlemmene.-->
-        </div>
-    </div>
+		</div>
+	</div>
 
-    <div id="top" class="content">
-        <p>
-            Dette er en nettside med en kort beskrivelse av et gruppeprosjekt i faget ING102 ved Høgskulen i Bergen, Campus Kronstad.
-            I tillegg er det sider med en introduksjon til hver av gruppemedlemmene i prosjektet.
-        </p>
-        <h2>Prosjekt</h2>
-        <p>
-            Prosjektet går ut på å skape en tjeneste hvor man kan finne noen å gå hjem med etter en kveld på byen.
-            <br>
-            <!--Vi velger å bruke br fordi det var en enkel løsning i dette tilfellet, selv om det ikke er anbefalt å bruke-->
-            <br>
-            <a class="black-box" href="prosjekt.html">MER INFO</a>
-        </p>
-
-
-
-        <h2>Gruppemedlemmer</h2>
-        <p>
-            Klikk på et bilde eller navn til et gruppemedlem for mer informasjon om dem.
-        </p>
-        <div class="members-ul">
-
-            <ul>
-                <li>
-                    <a href="andersg.html">
-                        <div>
-                            <img class="member-medium" src="img/AndersG.jpg" alt="Anders Graneng">
-                            <h4>Anders Graneng</h4>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="andersm.html">
-                        <div>
-                            <img class="member-medium" src="img/AndersM.jpg" alt="Anders Mæhlum">
-                            <h4>Anders Mæhlum</h4>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="jostein.html">
-                        <div>
-                            <img class="member-medium" src="img/Jostein.jpg" alt="Jostein Digernes">
-                            <h4>Jostein Digernes</h4>
-                        </div>
-                    </a>
-                </li>
+	<div id="top" class="content">
+		<p>
+			Dette er en nettside med en kort beskrivelse av et gruppeprosjekt i faget ING102 ved Høgskulen i Bergen, Campus Kronstad.
+			I tillegg er det sider med en introduksjon til hver av gruppemedlemmene i prosjektet.
+		</p>
+		<h2>Prosjekt</h2>
+		<p>
+			Prosjektet går ut på å skape en tjeneste hvor man kan finne noen å gå hjem med etter en kveld på byen.
+			<br>
+			<!--Vi velger å bruke br fordi det var en enkel løsning i dette tilfellet, selv om det ikke er anbefalt å bruke-->
+			<br>
+			<a class="black-box" href="prosjekt.html">MER INFO</a>
+		</p>
 
 
-                <li>
-                    <a href="sondre.html">
-                        <div>
-                            <img class="member-medium" src="img/Sondre.jpg" alt="Sondre Gjellestad">
-                            <h4>Sondre Gjellestad</h4>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <footer>
-        © Gruppe 9 | 2017
-    </footer>
+		<h2 id="members">Gruppemedlemmer</h2>
+		<p>
+			Klikk på et bilde eller navn til et gruppemedlem for mer informasjon om dem.
+		</p>
+		<div class="members-ul">
+
+			<ul>
+				<li>
+					<a href="andersg.html">
+						<div>
+							<img class="member-medium" src="img/AndersG.jpg" alt="Anders Graneng">
+							<h4>Anders Graneng</h4>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="andersm.html">
+						<div>
+							<img class="member-medium" src="img/AndersM.jpg" alt="Anders Mæhlum">
+							<h4>Anders Mæhlum</h4>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="jostein.html">
+						<div>
+							<img class="member-medium" src="img/Jostein.jpg" alt="Jostein Digernes">
+							<h4>Jostein Digernes</h4>
+						</div>
+					</a>
+				</li>
+
+
+				<li>
+					<a href="sondre.html">
+						<div>
+							<img class="member-medium" src="img/Sondre.jpg" alt="Sondre Gjellestad">
+							<h4>Sondre Gjellestad</h4>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer>
+		© Gruppe 9 | 2017
+	</footer>
 </body>
 
 </html>

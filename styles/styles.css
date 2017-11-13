@@ -56,29 +56,7 @@ body {
     height: 32px;
 }
 
-/*farge og st på navigasjonen*/
-nav {
-    background-color: black;
-    height: 64px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
 
-/*navig bar posisjon og farge, og størrelse*/
-nav .back {
-    width: 128px;
-    height: 48px;
-    background-color: gray;
-    text-align: center;
-    padding-top: 16px;
-}
-
-/*Tekstfarge for tilbake knappen i profil og prosjekt sidene*/
-nav .back a {
-    color: white;
-    text-decoration: none;
-}
 
 h1 {
     text-align: center;
@@ -92,8 +70,7 @@ h2 {
 }
 
 div.header {
-    margin: 0 0 16px 0;
-    padding: 32px 0px;
+	padding: 48px 0;
 }
 
 div.header-home {
@@ -304,10 +281,113 @@ div.quick-facts.andersg tr:hover {
 }
 /*Fargen endrer seg når du hovrer over teksten. Dette skjer kun på Anders G sin side.*/
 
+/* Her gjør vi footer fonten mer nøytral og sentrert.  */
 footer {
     margin: 32px 0;
     text-align: center;
     color: gray;
     font-size: 0.8em;
 }
-/* Her gjør vi footer fonten mer nøytral og sentrert.  */
+
+/* Stil for lenker i nav */
+a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+  	color: red;
+}
+
+/*  */
+.menuToggle {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+/* Skjult knapp som toggler menyen */
+.menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
+	-webkit-touch-callout: none;
+}
+
+/* Strekene i hamburgermenyen */
+.menuToggle span {
+	display: block;
+	width: 33px;
+	height: 4px;
+	margin-bottom: 5px;
+	position: relative;
+	background: rgb(95, 95, 95);
+	border-radius: 3px;
+	z-index: 1;
+	transform-origin: 4px 0px;
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				opacity 0.55s ease;
+}
+
+.menuToggle span:first-child {
+  	transform-origin: 0% 0%;
+}
+
+.menuToggle span:nth-last-child(2) {
+  	transform-origin: 0% 100%;
+}
+
+/* Roterer strekene til et kryss */
+.menuToggle input:checked ~ span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+/* Gjør den midterste streken usynlig */
+.menuToggle input:checked ~ span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menuToggle input:checked ~ span:nth-last-child(2) {
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Liste med lenker */
+.menu {
+	position: absolute;
+	width: 300px;
+	margin: -100px 0 0 -50px;
+	padding: 50px;
+	padding-top: 125px;
+	
+	background: #ededed;
+	list-style-type: none;
+	transform-origin: 0% 0%;
+	transform: translate(-100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+/* Lenker i listen */
+.menu li {
+	padding: 10px 0;
+	font-size: 22px;
+}
+
+/* Gjør listen synlig når checkboxen er avkrysset*/
+.menuToggle input:checked ~ ul {
+	transform: none;
+}
